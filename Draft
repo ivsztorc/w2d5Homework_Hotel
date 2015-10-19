@@ -1,0 +1,74 @@
+# hotel
+  # number of single rooms available
+  # number of double rooms available
+  # single room rate
+  # double room rate
+
+# check in
+  # number of guests
+  # how many single?
+  # how many double?
+  # assign available rooms
+
+# NOTE: Need to set availability of rooms as a class variable? 
+
+# def assign_rooms(roomsNeeded)
+  # availableDoubleRooms = 20
+  # availableSingleRooms = 20
+  # if roomsNeeded > availableDoubleRooms
+    # puts "Sorry, there is not enough rooms left"
+  # else
+    # puts "OK, we have availability"
+    # availableDoubleRooms = availableDoubleRooms - roomsNeeded
+    # puts "There are now #{availableDoubleRooms} double rooms left"
+  # end
+# end
+
+# def room_report
+  # puts "There are #{availableDoubleRooms} double rooms left and #{availableSingleRooms} single rooms left."
+# end
+
+# def checkin()
+  # puts "How many guests are you checking in?"
+  # guests = gets.chomp.to_i
+  # if guests == 1
+    # puts "OK, let's check to see if there are any single rooms..."
+  # elsif guests == 2
+    # puts "OK, let's check to see if there are any double rooms..."
+  # else
+    # puts "How many double rooms would you need?"
+    # roomsNeeded  = gets.chomp.to_i
+    # assign_rooms(roomsNeeded)
+  # end
+# end
+
+# def checkout()
+  # puts "How many guests are you checking in?"
+  # guests = gets.chomp.to_i
+  # if guests == 1
+    # puts "OK, let's check to see if there are any single rooms..."
+  # elsif guests == 2
+    # puts "OK, let's check to see if there are any double rooms..."
+  # else
+    # puts "Let's see if there are any family rooms."
+  # end
+# end
+
+# check out
+  # number of guests
+  # how many single?
+  # how many double?
+  # unassign available rooms
+
+# puts "Welcome to the Mercure Group Hotel. What would you like to do? A) Check some guests in? B) Check some guests out? C) "
+
+# menu = gets.chomp.downcase
+
+# case menu
+  # when "a"
+    # checkin()
+  # when "b"
+    # checkout()
+  # else
+    # puts "Sorry, I'm not sure what you mean by #{menu}"
+# end
